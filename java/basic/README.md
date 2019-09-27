@@ -1,22 +1,20 @@
-入门直接移步[菜鸟教程 - Java](https://www.runoob.com/java/java-tutorial.html)
 
 # 目录
-- [Java的特点]()
-- [JVM、JRE、JDK]()
-- [封装、继承、多态]()
-- [重写、重载]()
-- [基础数据类型]()
-- [线程&进程]()
-- [修饰符/关键字]()
-- [接口和抽象类]()
-- [序列化]()
-- [String、StringBuffer、StringBuilder]()
-- [垃圾回收机制]()
-- [锁]()
-- [泛型]()
-- [异常]()
-- []()
-
+- [1. Java的特点](#1-Java的特点)
+- [2. JVM、JRE、JDK](#2-JVMJREJDK)
+- [3. 封装、继承、多态](#3-封装继承多态)
+- [4. 重写、重载](#4-重写重载)
+- [5. 基础数据类型](#5-基础数据类型)
+- [6. 线程&进程](#6-线程进程)
+- [7. 修饰符/关键字](#7-修饰符关键字)
+- [8. 接口和抽象类](#8-接口和抽象类)
+- [9. 序列化](#9-序列化)
+- [10. String、StringBuffer、StringBuilder](#10-StringStringBufferStringBuilder)
+- [11. 垃圾回收机制](#11-垃圾回收机制)
+- [12. 锁](#12-锁)
+- [13. 泛型](#13-泛型)
+- [14. 异常](#14-异常)
+- [参考资料](#参考资料)
 
 ## 1. Java的特点
 
@@ -31,7 +29,7 @@
 解释型语言在程序运行时才翻译为机器语言，如javascript
 前者执行速度快，后者跨平台性好
 
-## 1. JVM、JRE、JDK
+## 2. JVM、JRE、JDK
 
 整体来看就是JVM<JRE<JDK
 - JVM：Java Virtual Machine 运行Java字节码(.class->机器可执行的二进制机器码)的虚拟机
@@ -41,9 +39,9 @@
 java程序从源代码到运行的步骤：
 ![](/imgs/java程序运行过程.jpg)
 
-## 1. 封装、继承、多态
+## 3. 封装、继承、多态
 
-封装就是隐藏对象的属性和实现细节，仅对外提供接口(方法)来控制内部属性的读改。封装的目的是增强安全性和简化编程。
+**封装**就是隐藏对象的属性和实现细节，仅对外提供接口(方法)来控制内部属性的读改。封装的目的是增强安全性和简化编程。
 ```
 public class Person {
   private int age;
@@ -54,13 +52,13 @@ public class Person {
 }
 ```
 
-继承就是子类继承父类的特征和行为。Java类(class)的继承是单继承，接口(interface)是多继承
+**继承**就是子类继承父类的特征和行为。Java类(class)的继承是单继承，接口(interface)是多继承
 ```
 public class Animal {}
 public class Cat extends Animal {}
 ```
 
-多态就是同一个接口，使用不同的实例而执行不同操作。
+**多态**就是同一个接口，使用不同的实例而执行不同操作。
 ```
 abstract class Animal {  
   abstract void eat();  
@@ -77,7 +75,7 @@ class Dog extends Animal {
 }
 ```
 
-## 1. 重写、重载
+## 4. 重写、重载
 
 重写Override体现在子类重新编写父类的方法。
 ```
@@ -113,7 +111,7 @@ public class Puppy{
 }
 ```
 
-## 1. 基础数据类型
+## 5. 基础数据类型
 
 数据类型|min|max|default|二进制位数
 -|-|-|-|-
@@ -126,7 +124,7 @@ double|||0.0d|64
 boolean|false|true|false
 char|\u0000|\uffff||16
 
-## 1. 线程&进程
+## 6. 线程&进程
 
 进程Process是计算机中程序的一次运行活动，是操作系统进行资源分配和调度的最小单位。一旦程序加载到内存中并准备执行，它就是一个进程。
 
@@ -139,7 +137,7 @@ char|\u0000|\uffff||16
 **线程安全**
 
 
-## 1. 修饰符/关键字
+## 7. 修饰符/关键字
 
 - 访问修饰符，修饰类(class)、变量(variable)、方法(method)
   - public
@@ -171,7 +169,7 @@ protected|✔|✔|✔|✔|✖
 default|✔|✔|✔|✖|✖
 private|✔|✖|✖|✖|✖
 
-## 1. 接口和抽象类
+## 8. 接口和抽象类
 接口interface
 ```
 interface Animal {
@@ -198,24 +196,28 @@ public abstract class Person {
 - 接口中不能含有静态代码块以及静态方法(用 static 修饰的方法)，而抽象类是可以有静态代码块和静态方法
 - 一个类只能继承一个抽象类，而一个类却可以实现多个接口
 
-## 1. 序列化
+## 9. 序列化
 
 https://www.runoob.com/java/java-serialization.html
 
-## 1. String、StringBuffer、StringBuilder
+## 10. String、StringBuffer、StringBuilder
 
 - 如果要操作**少量的数据**用**String**
 - **多线程**操作字符串缓冲区下**操作大量数据**用**StringBuffer**
 - **单线程**操作字符串缓冲区下操作**大量数据**用**StringBuilder**
 
-## 1. 垃圾回收机制
+## 11. 垃圾回收机制
 
 垃圾回收Garbage Collection是Java核心技术之一，JVM会自动处理内存动态分配和垃圾回收。
 
-## 1. 锁
+## 12. 锁
 
 同步锁
 
-## 1. 泛型
+## 13. 泛型
 
-## 1. 异常
+## 14. 异常
+
+## 参考资料
+
+- [菜鸟教程 - Java](https://www.runoob.com/java/java-tutorial.html)

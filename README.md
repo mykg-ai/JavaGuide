@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="imgs/java.png" width="100">
+  <img src="/imgs/java.png" width="100">
 </p>
 <p align="center">
   <a href="https://support.qq.com/products/87411?">
@@ -15,3 +15,4 @@
 
 JavaGuide旨在分享Java的重点知识，帮助小白快速成长。
 
+Copyright &copy; 2019 MYKG.AI All Rights Reserved.
