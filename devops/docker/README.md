@@ -153,12 +153,12 @@ docker rm xxxx
 
 ### 5.3 数据卷
 
-
-
 ## 6. docker-compose
 
-
+docker compose是Docker官方维护的对Docker容器集群快速编排的系统，其代码库为https://github.com/docker/compose。
 
 ## 7. dockerignore
 
 `.dockerignore`文件类似于`.gitignore`文件
+
+## 8. 网络配置
