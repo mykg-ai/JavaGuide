@@ -133,7 +133,7 @@ $ docker tag niginx nignx:4
 
 ### 5.2 操作容器
 
-```
+```shell
 # 启动容器
 $ docker run nginx -d
 
@@ -148,17 +148,39 @@ $ docker ps
 $ docker ps -a
 
 # 删除容器
-docker rm xxxx
+$ docker rm xxxx
+
+# 查看容器日志，-f参数是持久监听
+$ docker logs -f <container_name/id>
 ```
 
 ### 5.3 数据卷
 
+```
+# 查看所有数据卷
+$ docker volume ls
+# 查看数据卷详情
+$ docker volume inspect <volume-name>
+
+# 创建新的数据卷
+$ docker volume create <volume-name>
+
+# 删除数据卷
+$ docker volume rm <volume-name>
+
+# 清理没用的数据卷
+$ docker volume prune
+```
+
 ## 6. docker-compose
 
 docker compose是Docker官方维护的对Docker容器集群快速编排的系统，其代码库为https://github.com/docker/compose。
+
+详见[docker-compose](docker-compose.md)
 
 ## 7. dockerignore
 
 `.dockerignore`文件类似于`.gitignore`文件
 
 ## 8. 网络配置
+
